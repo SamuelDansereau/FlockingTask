@@ -19,8 +19,6 @@ Vector2 SeparationRule::computeForce(const std::vector<Boid*>& neighborhood, Boi
                 separatingForce += (position - neighborhood[i]->getPosition()) / desiredDistance;
             }
         }
-
-
     }
 
     separatingForce = Vector2::normalized(separatingForce);
